@@ -11,7 +11,7 @@ Planteamiento, diseño e implementación de una solución a un problema de anál
 
 ## Requisitos/ PENDIENTE
 
--Definición clara y precisa del problema a resolver
+- Definición clara y precisa del problema a resolver
 - Diseño y la implementación en Spark de la solución al problema propuesto
 - Documento que recoja y explique el problema, el proceso de diseño e implementación de la solución y su aplicación a los resultados.
 
