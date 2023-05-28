@@ -1,5 +1,5 @@
 '''
-            PRÁCTICA 4
+            PRÁCTICA 4 SPARK
 
 Integrantes: 
 
@@ -30,7 +30,8 @@ def get_stations(line):
 def main(nombre_archivo):
     sc = SparkContext()
 
-    rdd = sc.textFile("201906_Usage_Bicimad.json")
+    rdd = sc.textFile(nombre_archivo)
+
 
     #Filtramos los usuarios, quedándonos con los de tipo 0 y 1
     rdd1 = rdd.map(get_stations).filter(lambda x: x[2]<=1).filter(lambda x: x[0]!=x[1]) 
@@ -72,10 +73,10 @@ def main(nombre_archivo):
 
 
 
-
+    # Muestra de los resultados en la terminal
     listaResultados = rdd7.collect()
-    print(f'Los trayectos y horas seleccionadas son: \n(Formato de los datos -> (Inicio, Final), frecuencia_de_viajes, hora_con_mas_afluencia) \n {listaResultados}')
-    print(f'\nLa franja de edad que ms usa el servicio y su numero de trayectos es: {sol_edad}')
+    print(f'\nLos trayectos y horas seleccionadas son: \n(Formato de los datos -> ((Inicio, Final), (frecuencia_de_viajes, hora_con_mas_afluencia)) \n {listaResultados}')
+    print(f'\nLa franja de edad que mas usa el servicio y su numero de trayectos es: {sol_edad}')
 
 
 if __name__ == "__main__":
