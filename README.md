@@ -16,21 +16,22 @@ Con objetivo de disminuir el número de accidentes derivados de la interacción 
 
 Por ello con objetivo dee la resolución de este problema se estudiarán los siguientes datos:
 
-  - El 10 % de los trayectos más frecuentados
+  - Los 100  trayectos más frecuentados
 
-  - La franja horaria donde más frecuentada en los trayectos anteriores
+  - La hora más frecuentada en los trayectos anteriores
 
   - La franja de edad donde más se usan las bicicletas eléctricas.
 
 Cabe destacar que sólo se excluirán los usuarios ocasionales o trabajadores de la empresa en ese estudio.
 
-
-## Requisitos/ PENDIENTE
-
-- Definición clara y precisa del problema a resolver
-- Diseño y la implementación en Spark de la solución al problema propuesto
-- Documento que recoja y explique el problema, el proceso de diseño e implementación de la solución y su aplicación a los resultados.
-
-El documento asociado a la práctica tiene un formato libre, puede ser un documento pdf, html, notebook... El objetivo fundamental del mismo es que explique con claridad tanto el problema como la solución al mismo. Algunos aspectos que puede ser interesante tratar en el documento para contribuir a su claridad son: motivación, ejemplos,  detalles importantes de la implementación, evaluación de resultados, etc.
+## Archivos
+En este repositorio podemos encontrar varios archivos:
+ -Bicimad.pdf donde se encuentra la descripción y motivación del problema,el proceso de diseño e implementación de la solución y su aplicación a los resultados. Además sepuede observar su ejecución en el cluster.
+ -Practica_BiciMad.ipynb notebook donde se encuentra el código ya ejecutado. Se recomienda la utilización de este a la hora de estudiar el código puesto que su entendimiento es más claro y completo.
+ -Practica_BiciMad.py archivo py que se ha utilizado a la hora de ejecutar en el cluster, contiene el mismo contenido que el notebook excepto por la realización de las gráficas que están únicamente en el notebook. Para ejecutarlo es necesario ejecutarlo de la siguiente forma: python3 Practica_BiciMad.py 201906_Usage_Bicimad.json
+ - 201906_Usage_Bicimad.zip cuenta conlos datos de Junio 2019 comprimidos.
+ - Captura de Pantalla: se encuentra la imagen de la ejecución del código en el cluster.
+ 
+ 
 
 
