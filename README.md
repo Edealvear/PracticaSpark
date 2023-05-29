@@ -1,4 +1,4 @@
-# Practica 4 - Spark
+# Práctica 4 - Spark
 
 Integrantes del equipo:
 
