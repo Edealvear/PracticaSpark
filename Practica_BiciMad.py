@@ -67,7 +67,7 @@ def main(nombre_archivo):
     rdd7 = rdd6.map(lambda x: (x[0][0],(x[1],x[0][1]))).groupByKey().map(lambda x: (x[0],max(list(x[1]))))
     
 
-    # Obtenemos la franja de edad usa el servicio
+    # Obtenemos la franja de edad que mas usa el servicio
     rddEdad = rdd1.map(lambda x: (x[4], 1)).groupByKey().map(lambda x: (int(x[0]), len(x[1])))
     sol_edad= rddEdad.max(key= lambda x: x[1])
 
