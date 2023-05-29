@@ -26,12 +26,23 @@ Cabe destacar que sólo se excluirán los usuarios ocasionales o trabajadores de
 
 ## Archivos
 En este repositorio podemos encontrar varios archivos:
- - Bicimad.pdf donde se encuentra la descripción y motivación del problema,el proceso de diseño e implementación de la solución y su aplicación a los resultados. Además sepuede observar su ejecución en el cluster.
- - Practica_BiciMad.ipynb notebook donde se encuentra el código ya ejecutado. Se recomienda la utilización de este a la hora de estudiar el código puesto que su entendimiento es más claro y completo.
- - Practica_BiciMad.py archivo py que se ha utilizado a la hora de ejecutar en el cluster, contiene el mismo contenido que el notebook excepto por la realización de las gráficas que están únicamente en el notebook. Para ejecutarlo es necesario ejecutarlo de la siguiente forma: python3 Practica_BiciMad.py 201906_Usage_Bicimad.json
- - 201906_Usage_Bicimad.zip cuenta conlos datos de Junio 2019 comprimidos. (Para ejecutar tanto el notebook como el .py requieren de los datos descomprimidos)
- - Captura de Pantalla: se encuentra la imagen de la ejecución del código en el cluster.
+ - **Bicimad.pdf**: donde se encuentra la descripción y motivación del problema, el proceso de diseño e implementación de la solución y su aplicación a los resultados. Además sepuede observar su ejecución en el cluster.
+ - **Practica_BiciMad.ipynb**: notebook donde se encuentra el código ya ejecutado. Se recomienda la utilización de este a la hora de estudiar el código puesto que su entendimiento es más claro y completo.
+ - **Practica_BiciMad.py**: archivo py que se ha utilizado a la hora de ejecutar en el cluster, contiene el mismo contenido que el notebook excepto por la realización de las gráficas que están únicamente en el notebook. 
+ - **201906_Usage_Bicimad.zip**: cuenta con los datos de Junio 2019 comprimidos. (Para ejecutar tanto el notebook como el .py requieren de los datos descomprimidos)
+ - **Captura de Pantalla**: se encuentra la imagen de la ejecución del código en el cluster.
  
+ ## Ejecución
+  - Opción 1: (recomendado)
+      - sudo apt install openjdk-11-jre-headless
+      - jupyter-notebook
+      - Seleccionar Practica_BiciMad.ipynb
+  - Opción2:
+      - python3 Practica_BiciMad.py 201906_Usage_Bicimad.json
+
+
+
+
  
 
 
