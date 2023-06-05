@@ -34,7 +34,6 @@ En este repositorio podemos encontrar varios archivos:
  
  ## Ejecución
   - Opción 1: (recomendado)
-      - sudo apt install openjdk-11-jre-headless
       - jupyter-notebook
       - Seleccionar Practica_BiciMad.ipynb
   - Opción2:
