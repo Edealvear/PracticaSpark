@@ -25,14 +25,27 @@ def get_stations(line):
     edad = data["ageRange"]
     return salida, entrada, user,franja_horaria, edad
 
-
-
-def main(nombre_archivo):
+def get_year(sc):#Para ejecutar en el cluster
+    rdd = sc.textFile("/public_data/bicimad/201901_movements.json")
+    for i in range(2, 10):
+        rdd.union(sc.textFile(f"/public_data/bicimad/20190{i}_movements.json"))#Los separo para poder hacer diferencia entre los que tienen 06, 07,08... y los de dos cifras 10,11,12...
+    for i in range(10,13):
+        rdd.union(sc.textFile())
+    return rdd
+    
+def get_data(sc, lista_Archivos):
+    rdd = sc.textFile(lista_Archivos.pop(0))#Nos creamos el rdd
+    for textName in lista_Archivos:
+        rdd.union(sc.textFile(textName))#Le vamos añadiendo todos los archivos que hayamos metido 
+    return rdd
+    
+def main(lista_Archivos = []):
     sc = SparkContext()
-
-    rdd = sc.textFile(nombre_archivo)
-
-
+    #if nombre_archivo == "TODOS":
+    #    rdd = get_year(sc)
+    #else:
+    #    rdd = sc.textFile(nombre_archivo)
+    rdd = get_data(sc, lista_Archivos)
     #Filtramos los usuarios, quedándonos con los de tipo 0 y 1
     rdd1 = rdd.map(get_stations).filter(lambda x: x[2]<=1).filter(lambda x: x[0]!=x[1]) 
 
@@ -81,5 +94,6 @@ def main(nombre_archivo):
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
-        main(sys.argv[1])
+        main(list(sys.argv[1:]))
+
      
