@@ -38,7 +38,8 @@ En este repositorio podemos encontrar varios archivos:
       - Seleccionar Practica_BiciMad.ipynb
   - Opción2:
       - python3 Practica_BiciMad.py [Nombres_Archivos]*
-      ej: python3 Practica_BiciMad.py 201901_Usage_Bicimad.json 201902_Usage_Bicimad.json 201903_Usage_Bicimad.json 201904_Usage_Bicimad.json 201905_Usage_Bicimad.json 201906_Usage_Bicimad.json
+      
+      - ej: python3 Practica_BiciMad.py 201901_Usage_Bicimad.json 201902_Usage_Bicimad.json 201903_Usage_Bicimad.json 201904_Usage_Bicimad.json 201905_Usage_Bicimad.json 201906_Usage_Bicimad.json
 
 
 
