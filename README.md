@@ -33,10 +33,10 @@ En este repositorio podemos encontrar varios archivos:
  - **Captura de Pantalla**: se encuentra la imagen de la ejecución del código en el cluster.
  
  ## Ejecución
-  - Opción 1: (recomendado)
+  - Opción 1: (recomendado para la visualización de los resultados pues cuenta con gráficas y tablas extra)
       - jupyter-notebook
       - Seleccionar Practica_BiciMad.ipynb
-  - Opción2:
+  - Opción2: (cuenta con el mismo estudio que en el notebook para varios ficheros usando union de rdd)
       - python3 Practica_BiciMad.py [Nombres_Archivos]*
       
       - ej: python3 Practica_BiciMad.py 201901_Usage_Bicimad.json 201902_Usage_Bicimad.json 201903_Usage_Bicimad.json 201904_Usage_Bicimad.json 201905_Usage_Bicimad.json 201906_Usage_Bicimad.json
